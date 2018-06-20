@@ -130,25 +130,25 @@ public class PlayerControl : MonoBehaviour {
 
     private void SpeedSet ()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) && lastKey != "A")
         {
             if (currentSpeed <= maxSpeed) { currentSpeed += accel; }
             lastKey = "A";
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D) && lastKey != "D")
         {
             if (currentSpeed <= maxSpeed) { currentSpeed += accel; }
             lastKey = "D";
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && lastKey != "W")
         {
             if (currentSpeed <= maxSpeed) { currentSpeed += accel; }
             lastKey = "W";
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) && lastKey != "S")
         {
             if (currentSpeed <= maxSpeed) { currentSpeed += accel; }
             lastKey = "S";
